@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_general"
+        android:title="General">
+
+        <EditTextPreference
+            android:key="username"
+            android:summary="How would you like the assistant to refer to you?"
+            android:title="User Name" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_assistant"
+        android:title="Assistant">
+
+        <ListPreference
+            android:entries="@array/kato_lang"
+            android:entryValues="@array/kato_lang_values"
+            android:key="bot_lang"
+            android:summary="Select the target language of the assistant"
+            android:title="Target Language" />
+
+        <ListPreference
+            android:entries="@array/scenarios"
+            android:entryValues="@array/scenarios"
+            android:key="select_scen"
+            android:summary="Select the scenario simulation of choice"
+            android:title="Scenario Simulation" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="speech_only_mode"
+            android:summary="Speech only mode disables any visual or textual cues. It can be used to test knowledge of the target language"
+            android:title="Speech Only Mode" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

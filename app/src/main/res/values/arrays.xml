@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scenarios">
+        <item>Greetings</item>
+        <item>Travel</item>
+    </string-array>
+
+    <string-array name="default_lang">
+        <item>English</item>
+    </string-array>
+
+    <string-array name="kato_lang">
+        <item>French</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+    </string-array>
+
+    <string-array name="kato_lang_values">
+        <item>fr</item>
+        <item>es</item>
+        <item>it</item>
+    </string-array>
+
+    <string-array name="interface_lang">
+        <item>English</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+    </string-array>
+
+    <string-array name="interface_lang_values">
+        <item>en</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>it</item>
+    </string-array>
+
+</resources>

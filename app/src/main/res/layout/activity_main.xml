@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/text_input"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/keyboard_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/assistant"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="@string/hint" />
+
+    <TextView
+        android:id="@+id/text_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/visualCue"
+        android:clickable="false"
+        android:editable="false"
+        android:enabled="false"
+        android:gravity="center"
+        android:layout_alignRight="@+id/imageRepeat"
+        android:layout_alignEnd="@+id/imageRepeat"
+        android:layout_above="@+id/assistant" />
+
+    <ImageButton
+        android:id="@+id/keyboard_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ic_keyboard_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/starters_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_live_help_black_48dp" />
+
+
+    <ImageButton
+        android:id="@+id/mic_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/text_input"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_keyboard_voice_black_48dp" />
+
+    <ImageView
+        android:id="@+id/assistant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/assistant" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/assistant"
+        android:layout_alignRight="@+id/assistant"
+        android:layout_below="@+id/assistant" />
+
+    <ImageView
+        android:id="@+id/visualCue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/mic_button"
+        android:background="@android:color/transparent"
+        android:layout_toLeftOf="@+id/mic_button"
+        android:layout_above="@+id/assistant" />
+
+    <ImageButton
+        android:id="@+id/imageRepeat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/text_input"
+        android:layout_alignRight="@+id/text_input"
+        android:layout_alignTop="@+id/imageReveal"
+        android:background="@drawable/ic_replay_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/imageReveal"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_visibility_black_48dp"
+        android:layout_alignBottom="@+id/text_output"
+        android:layout_toLeftOf="@+id/imageRepeat"
+        android:layout_toStartOf="@+id/imageRepeat" />
+
+    <ImageButton
+        android:id="@+id/swap_langinput"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_swap_horiz_black_24dp_2x"
+        android:layout_alignTop="@+id/text_input"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/listen_input"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_hearing_black_24dp_2x"
+        android:layout_below="@+id/swap_langinput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/spc_bubble"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/text_output"
+        android:layout_toStartOf="@+id/text_output"
+        android:layout_below="@+id/visualCue" />
+
+    b
+
+
+</RelativeLayout>

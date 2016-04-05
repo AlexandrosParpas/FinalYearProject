@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/select_scenario"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sel_scenario"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toLeftOf="@+id/sel_scenario"
+        android:layout_weight="0.20"
+        android:gravity="left|center"
+        android:text="Select Interaction Scenario"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/sel_scenario"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/icn_greetings" />
+
+    <TextView
+        android:id="@+id/select_lang"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sel_lang"
+        android:layout_below="@+id/select_scenario"
+        android:layout_marginLeft="30dp"
+        android:layout_toLeftOf="@+id/sel_scenario"
+        android:layout_toStartOf="@+id/sel_scenario"
+        android:gravity="left|center"
+        android:text="Select Target Language"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/sel_lang"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/select_scenario"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/icn_french" />
+
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Start"
+        android:background="@drawable/ic_arrow_forward_black_24dp"
+        android:layout_below="@+id/select_lang"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
